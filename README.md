@@ -3,6 +3,13 @@
 The ThreadLimits project tries to empirically determine how many threads can be created in a JVM with a given memory and CPU limit.
 The goal is to prove that CPU has no impact on the amount of threads that can be created, while memory has a major impact.
 
+The project create a new thread until it fails with OOM exception or JVM native one.
+Counter for Every new thread is displayed in the console. E.g. last line with:
+
+```New thread #6804.```
+
+means that there were 6804 theads created before the JVM failed.
+
 ## Building
 
 ```bash
