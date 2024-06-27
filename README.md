@@ -12,6 +12,13 @@ means that there were 6804 theads created before the JVM failed.
 
 ## Building
 
+Use JDK 22 to build the project.
+
+E.g. with sdkman:
+```bash
+sdk use java 22-zulu
+```
+
 ```bash
 mvn clean package
 docker build -t threadlimits .
